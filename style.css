@@ -13,13 +13,44 @@ body {
     margin-left: 35vw;
     margin-top: 30vh;
     border-radius: 10px;
-    box-shadow: 0 3px 5px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 5px 4px rgba(122, 122, 223, 0.8);
     background: whitesmoke;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
+.tip-output {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgba(68, 68, 231, 0.9);
+}
+
+input {
+    height: 30px;
+    width: 250px;
+    border: 3px solid rgba(122, 122, 223, 0.6);
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    height: 38px;
+    width: 60px;
+    border: 3px solid rgba(122, 122, 223, 0.6);
+    background: rgba(122, 122, 223, 0.7);
+    border-radius: 10px;
+}
+
+button:active {
+    transform: scale(96%);
+}
+
+button:focus {
+    outline: none;
+}
 
 @media screen and (max-width : 1000px) {
     .container {
@@ -28,5 +59,24 @@ body {
         width: 80vw;
         height: 50vh;
         overflow-y: -moz-hidden-unscrollable;
+    }
+
+    .tip-output {
+        font-size: 20px;
+        font-weight: 300;
+        color: rgba(68, 68, 231, 0.9);
+    }
+
+    .input-container {
+        width: 80vw;
+    }
+
+    input {
+        width: 70vw;
+    }
+
+    button {
+        margin-top: 10px;
+        width: 30vw;
     }
 }
